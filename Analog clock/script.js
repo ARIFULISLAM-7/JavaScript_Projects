@@ -2,7 +2,7 @@ let hr = document.getElementById("hour");
 let min = document.getElementById("minute");
 let sec = document.getElementById("second");
 
-function disTime(){
+function displayTime(){
     let date = new Date();
     // Getting hour. minutes, seconds
 
@@ -19,4 +19,4 @@ function disTime(){
     sec.style.transform = `rotate(${sRotation}deg)`;
 }
 
-setInterval(disTime, 1000);
+setInterval(displayTime, 1000);
